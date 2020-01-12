@@ -21,8 +21,20 @@
     <a href="https://github.com/Human-Connection/Human-Connection/releases" target="_blank">
       {{ $t('site.changelog') }}
     </a>
+    <span>-</span>
+    <span>
+      <small>{{ version }}</small>
+    </span>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return { version: `v${process.env.release}` }
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 .ds-footer {
