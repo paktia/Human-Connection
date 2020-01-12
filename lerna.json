@@ -1,0 +1,8 @@
+{
+  "npmClient": "yarn",
+  "packages": [
+    "backend/",
+    "webapp/"
+  ],
+  "version": "0.2.1"
+}
