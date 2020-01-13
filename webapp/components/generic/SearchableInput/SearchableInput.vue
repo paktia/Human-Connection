@@ -41,7 +41,7 @@
               v-if="option.__typename === 'User'"
               :class="{ 'option-with-heading': isFirstOfType(option), 'flex-span': true }"
             >
-              <hc-user :user="option" :showPopover="false" />
+              <user-teaser :user="option" :showPopover="false" />
             </span>
             <span
               v-if="option.__typename === 'Post'"
@@ -59,14 +59,14 @@
 import { isEmpty } from 'lodash'
 import SearchHeading from '~/components/generic/SearchHeading/SearchHeading.vue'
 import SearchPost from '~/components/generic/SearchPost/SearchPost.vue'
-import HcUser from '~/components/User/User.vue'
+import UserTeaser from '~/components/UserTeaser/UserTeaser.vue'
 
 export default {
   name: 'SearchableInput',
   components: {
     SearchHeading,
     SearchPost,
-    HcUser,
+    UserTeaser,
   },
   props: {
     id: { type: String },
