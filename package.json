@@ -28,7 +28,6 @@
     "@babel/core": "^7.8.0",
     "@babel/preset-env": "^7.8.2",
     "@babel/register": "^7.8.0",
-    "auto-changelog": "^1.16.2",
     "bcryptjs": "^2.4.3",
     "codecov": "^3.6.1",
     "cross-env": "^6.0.3",
