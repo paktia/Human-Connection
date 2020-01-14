@@ -60,7 +60,8 @@ Cypress.Commands.add("login", ({ email, password }) => {
     .as("submitButton")
     .click();
   cy.get(".iziToast-message").should("contain", "You are logged in!");
-  cy.get(".iziToast-close").click();
+  cy.location("pathname").should("eq", "/");
+  // cy.get(".iziToast-close").click();
 });
 
 Cypress.Commands.add("logout", (email, password) => {
